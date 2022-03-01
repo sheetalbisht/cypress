@@ -26,11 +26,11 @@ const applicationFormTestdata = [
         streetAddress: 'Street3',
         postal: '099000',
         country: '5',
-        email: 'sheetal2.bisht@seera.sa'
+        email: 'sheetal2.bisht@seera.sa',
         principalInvestigator: 'Yes',
         researchApplication: ['Narrative', 'Proposal Cover Form']
     },
 ];
 
 
-export default testData;
+export default applicationFormTestdata;

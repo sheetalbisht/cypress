@@ -5,11 +5,11 @@
 const applicationFormPageObject = {
      nameAndCredentialsInput : '[name=namec]',
      streetAddressInput : '[name=street]',
-     postalInput : '[[name=zipcode]]',
+     postalInput : '[name=zipcode]',
      countrySelect : 'select',
      emailInput : '[name=email]',
      principalInvestigatorRadio : '[type=radio]' ,
-     researchApplicantionCheckbox : '[type=checkbox]',
+     researchApplicationCheckbox : '[type=checkbox]',
      submitButton : '[type=submit]'
 }
 

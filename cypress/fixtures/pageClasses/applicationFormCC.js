@@ -1,4 +1,4 @@
-import applicationFormPageObject, * as applicationFormPageObject from '../../fixtures/testData/applicationFormTestdata' ;
+import * as applicationFormPageObject from './applicationFormPO' ;
 
 export function enterNameAndCredentials(nameAndCredentials)
 {
