@@ -5,7 +5,7 @@
 const applicationFormTestdata = [
     {
         nameAndCredentials: 'name1 and password1',
-        streetAddress: 'Stree1',
+        streetAddress: 'Street1',
         postal: '12345',
         country: '2',
         email: 'sheetal.bisht@seera.sa',
@@ -19,7 +19,7 @@ const applicationFormTestdata = [
         country: '3',
         email: 'sheetal1.bisht@seera.sa',
         principalInvestigator: 'No',
-        researchApplication: ['Abstract', 'Proposal Cover Form']
+        researchApplication: ['Abstract', 'Prpoposal']
     },
     {
         nameAndCredentials: 'name3 and password3',
@@ -28,7 +28,7 @@ const applicationFormTestdata = [
         country: '5',
         email: 'sheetal2.bisht@seera.sa',
         principalInvestigator: 'Yes',
-        researchApplication: ['Narrative', 'Proposal Cover Form']
+        researchApplication: ['Narrative', 'Prpoposal']
     },
 ];
 
