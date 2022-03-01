@@ -1,5 +1,5 @@
-import applicationFormTestdata from '../../fixtures/testData/applicationFormTestdata';
-import * as action from '../../fixtures/pageClasses/applicationFormCC' ;
+import applicationFormTestdata from '../../fixtures/testData/applicationForm/applicationFormTestdata';
+import * as action from '../../fixtures/pageClasses/applicationForm/applicationFormCC' ;
 
 /**
  * passing dynamic test data sets.

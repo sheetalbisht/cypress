@@ -1,4 +1,4 @@
-import * as applicationFormPageObject from './applicationFormPO' ;
+import * as applicationFormPageObject from './../applicationForm/applicationFormPO' ;
 
 export function enterNameAndCredentials(nameAndCredentials)
 {
