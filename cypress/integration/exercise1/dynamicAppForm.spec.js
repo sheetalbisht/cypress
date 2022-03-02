@@ -10,7 +10,7 @@ context('Submit Application Form', () => {
     });
 
     applicationFormTestdata.forEach(element => {
-        it('Filling form with dynamic test data',function(){
+        it('Application Form - dynamic data',function(){
             action.enterNameAndCredentials(element.nameAndCredentials);
             action.enterStreetAddress(element.streetAddress);
             action.enterPostalCode(element.postal);
