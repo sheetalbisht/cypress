@@ -7,7 +7,7 @@ export function clickDirectFlightRadio()
 
 export function clickShowAllLink()
 {
-    cy.get(searchPageObject.showAllLink).click({force: true}) ;
+    cy.get(searchPageObject.showAllLink).contains('Show all').click();
 }
 
 export function checkSaudiaCheckbox()
