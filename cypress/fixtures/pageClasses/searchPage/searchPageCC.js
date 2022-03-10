@@ -19,6 +19,3 @@ export function clickSelectFlightButton()
 {
     cy.get(searchPageObject.selectFlightButton).click({force: true}) ;
 }
-
-
-
