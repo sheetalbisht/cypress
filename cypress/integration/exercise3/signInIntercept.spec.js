@@ -11,25 +11,40 @@ describe('Exercise 3' , () => {
                 action.clickSignInButton();
                 action.enterEmailId(email);
                 action.enterPassword(password);
-
                 apiHandler.interceptLoginApi();
                 action.clickSignInSubmitButton();
 
                 cy.wait('@loginAPI').then((login) => {
                     let payload = login.request.body;
                     cy.log('login - ', login);
-                    expect(payload.email, 'Email matched').to.eq(email);
-                    expect(payload.password, 'Password matched').to.eq(password);
+                    expect(payload.email, 'Email matched.').to.eq(email);
+                    expect(payload.password, 'Password matched.').to.eq(password);
                 });
 
-                let firstName = "Sheetal";
-                let lastName = "Bisht";
+                let firstName = "SheetalUpdated";
+                let lastName = "BishtUpdated";
+
                 action1.clickMyAccountButton();
                 action1.clickViewFullScreenLink();
                 action1.clickViewAndEditProfileLink();
                 action1.enterFirstName(firstName);
                 action1.enterLastName(lastName);
+                apiHandler.interceptUserProfileApi();
                 action1.clickSaveButton();
 
+                 cy.wait('@userProfileAPI').then((userProfile) => {
+                     let requestPayload = userProfile.request.body;
+                     let response = userProfile.response.body;
+                     cy.log('userProfile - ', userProfile);
+
+                     // Request payload validation
+                     expect(requestPayload.FirstName, 'Firstname updated.').to.eq(firstName);
+                     expect(requestPayload.LastName, 'Lastname updated.').to.eq(lastName);
+
+                     // Response validation
+                     expect(response.FirstName, 'Firstname updated.').to.eq(firstName);
+                     expect(response.LastName, 'Lastname updated.').to.eq(lastName);
+                     expect(response.email, 'Email is correct.').to.eq(email);
+                 });
           });
     })
