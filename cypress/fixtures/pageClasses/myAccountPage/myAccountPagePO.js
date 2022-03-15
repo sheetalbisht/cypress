@@ -3,10 +3,11 @@
  */
 
 const myAccountPageObject = {
-     myAccountButton : '[class=ActionBar__MyAccount-hx2qix-4 iNkguc]',
-     viewAndEditProfileLink : '[class=Navigation__Text-sc-1ys5pvk-6 fvFrqR]',
+     myAccountButton : '[class="sc-kkbgRg gkuQcv"]',
+     viewFullScreenLink : '[class="sc-LKuAh bvzJMu"]',
+     viewAndEditProfileLink : 'h4',
      firstNameInput : '[data-testid=myaccount-traveller-firstName]',
-     lastNameInput : '[name-testid=lastName]',
+     lastNameInput : '[name=lastName]',
      saveButton : '[type=button]'
 }
 
