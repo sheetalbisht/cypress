@@ -3,5 +3,5 @@ export function interceptLoginApi() {
 }
 
 export function interceptUserProfileApi() {
-    cy.intercept('POST', 'api/account/v2/user/**').as('userProfileAPI');
+    cy.intercept('PUT', 'api/account/v2/user/**').as('userProfileAPI');
 }

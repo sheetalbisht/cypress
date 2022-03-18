@@ -21,8 +21,8 @@ describe('Exercise 3' , () => {
                     expect(payload.password, 'Password matched.').to.eq(password);
                 });
 
-                let firstName = "SheetalUpdated";
-                let lastName = "BishtUpdated";
+                let firstName = "Sheetalupdated";
+                let lastName = "Bishtupdated";
 
                 action1.clickMyAccountButton();
                 action1.clickViewFullScreenLink();
